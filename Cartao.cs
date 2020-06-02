@@ -10,9 +10,9 @@ namespace Aula08Abstracao
         
         public string ValidarToken(){
             if(token != null && token != ""){
-                return "Token Validado com sucesso.";
+                return "Token Validado com sucesso.\n";
             }
-            return "Token Inválido.";
+            return "Token Inválido.\n";
         }
     }
 }
