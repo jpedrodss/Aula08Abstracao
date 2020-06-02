@@ -13,6 +13,10 @@ namespace Aula08Abstracao
             CartaoCredito visa = new CartaoCredito();
             visa.limite = 700;
 
+            System.Console.WriteLine("Por favor, digite a data de pagamento: ");
+            elo.data = DateTime.Parse(Console.ReadLine());
+            System.Console.WriteLine($"Data de pagamento: {elo.data}");
+
             do{
             System.Console.WriteLine("O token será validado. Aguarde...\n");
             System.Console.WriteLine(elo.ValidarToken());
@@ -20,7 +24,7 @@ namespace Aula08Abstracao
 
             System.Console.WriteLine($"Seu saldo atual é de ${elo.saldo}");
             System.Console.WriteLine($"Você está prestes a realizar um pagamento no valor de ${elo.valor}.");
-            System.Console.WriteLine($"\nSeu novo saldo é {elo.Pagar(1050, 550)}");
+            System.Console.WriteLine($"\nSeu novo saldo é {elo.Pagar(saldo, valor)}");
 
             System.Console.WriteLine($"\nLimite atual de ${visa.limite}.");
             System.Console.WriteLine($"Limite aumentado para ${visa.AumentarLimite(visa.limite, 500)}."); 
