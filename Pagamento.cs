@@ -6,8 +6,8 @@ namespace Aula08Abstracao
     {
         public DateTime data { get; set; }
         public float valor { get; set; }
-        public float Pagar(float saldo, float valor){
-            return saldo - valor;
+        public string Pagar(){
+            return "Pagamento efetuado com sucesso!";
         }
     }
 }
