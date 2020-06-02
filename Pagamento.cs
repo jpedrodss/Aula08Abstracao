@@ -7,7 +7,7 @@ namespace Aula08Abstracao
         public DateTime data { get; set; }
         public float valor { get; set; }
         public string Pagar(){
-            return "Pagamento com sucesso";
+            return $"Pagamento com sucesso.";
         }
     }
 }

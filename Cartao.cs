@@ -8,11 +8,11 @@ namespace Aula08Abstracao
         public float numeroCartao { get; set; }
         public string cvv { get; set; }
         
-        public bool ValidarToken(){
+        public string ValidarToken(){
             if(token != null && token != ""){
-                return true;
+                return "Token Validado com sucesso.";
             }
-            return false;
+            return "Token Inválido.";
         }
     }
 }
